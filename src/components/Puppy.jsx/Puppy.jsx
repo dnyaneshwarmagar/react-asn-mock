@@ -1,7 +1,8 @@
 import "./Puppy.css"
-const Puppy = () => {
+const Puppy = ({breed}) => {
+    
   return (
-    <div className="container">Puppy</div>
+    <div className="container" >Puppy</div>
   )
 }
 

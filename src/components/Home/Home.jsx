@@ -15,12 +15,15 @@ const Home = () => {
     })
     console.log('data:', data)
     }
+    const openImage=(el)=>{
+        
+    }
   return (
     <div className="container">
     
       <div className="cards">
         {data?.map(el=><div><p>{el}</p>
-        <button>Open Image</button>
+        <button onClick={(el)=>openImage(el)}>Open Image</button>
         </div>)}
       </div>
    

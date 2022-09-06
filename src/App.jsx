@@ -7,7 +7,7 @@ import Puppy from './components/Puppy.jsx/Puppy'
 import Search from './components/Search/Search'
 
 function App() {
-
+  let [breed,setBreed]=("")
   return (
     <div className="App">
       <div>
@@ -16,8 +16,8 @@ function App() {
       </div>
       <div>
       <Routes>
-        <Route path="/" element={<Home/>}/>
-        <Route path="/puppy" element={<Puppy/>}/>      
+        <Route path="/" element={<Home setBreed={setBreed}/>}/>
+        <Route path="/puppy" element={<Puppy breed={breed}/>}/>      
         <Route path="/search" element={<Search/>}/>    
       </Routes>
       </div>
