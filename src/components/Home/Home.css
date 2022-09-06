@@ -15,4 +15,5 @@ align-items: center;
 .cards div{
     border: 1px solid;
     padding: 5%;
+    background-color: thistle;
 }

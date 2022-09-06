@@ -11,10 +11,12 @@
    
    }
    .imgCont div{
-    border: 2px solid red;
-    height: 30%;
+    
+    height: 20%;
    }
    img{
+    border: 2px solid red;
     overflow:hidden;
-    width: 100%;
+    max-width: 100%;
+    height: auto;
    }

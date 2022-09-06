@@ -28,7 +28,7 @@ const Home = ({ setBreed }) => {
       <div className="cards">
         {data?.map((item) => (
           <div key={item}>
-            <p>{item}</p>
+            <p>{item.toUpperCase()}</p>
             <button onClick={()=>openImage(item)}>Open Image</button>
           </div>
         ))}
