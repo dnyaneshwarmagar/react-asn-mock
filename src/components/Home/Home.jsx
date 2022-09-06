@@ -18,17 +18,18 @@ const Home = ({ setBreed }) => {
       });
     console.log("data:", data);
   };
-  const openImage = (el) => {
-    setBreed(el);
+  const openImage = (item) => {
+  
+    setBreed(item);
     navigate("/puppy");
   };
   return (
     <div className="container">
       <div className="cards">
-        {data?.map((el) => (
-          <div>
-            <p>{el}</p>
-            <button onClick={(el) => openImage(el)}>Open Image</button>
+        {data?.map((item) => (
+          <div key={item}>
+            <p>{item}</p>
+            <button onClick={()=>openImage(item)}>Open Image</button>
           </div>
         ))}
       </div>

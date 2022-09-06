@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import {Routes,Route} from "react-router-dom"
 import './App.css'
 import Home from './components/Home/Home'
@@ -8,6 +8,9 @@ import Search from './components/Search/Search'
 
 function App() {
   let [breed,setBreed]=useState("")
+  useEffect(()=>{
+    setBreed(breed)
+  },[breed])
   return (
     <div className="App">
       <div>
