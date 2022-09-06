@@ -17,7 +17,7 @@ const Puppy = ({breed}) => {
 
   return (
     <div className="container" >
-        {breed?<div className="imgCont">{data?.map((el)=><div ><img src={el} alt="img" /></div>)}</div>:<p>Search for Breed</p>}
+        {breed?<div className="imgCont">{data?.map((el)=><div ><img src={el} alt="img" /></div>)}</div>:<h2>Go to Search Page and Search for Breed</h2>}
     </div>
   )
 }

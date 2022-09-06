@@ -15,7 +15,7 @@ const Search = ({setBreed}) => {
         
       <h1>Search Breed of Dog</h1>
       <div>
-        <input onChange={(e)=>setVal(e.target.value)}/>
+        <input onChange={(e)=>setVal(e.target.value)} placeholder="Type Breed"/>
         <button onClick={()=>openImage(val)}>Search</button>
       </div>
       {}
