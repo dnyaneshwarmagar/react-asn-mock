@@ -1,7 +1,7 @@
-
+import "./Puppy.css"
 const Puppy = () => {
   return (
-    <div>Puppy</div>
+    <div className="container">Puppy</div>
   )
 }
 
