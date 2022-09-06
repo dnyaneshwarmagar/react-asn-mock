@@ -7,7 +7,7 @@ import Puppy from './components/Puppy.jsx/Puppy'
 import Search from './components/Search/Search'
 
 function App() {
-  let [breed,setBreed]=("")
+  let [breed,setBreed]=useState("")
   return (
     <div className="App">
       <div>
