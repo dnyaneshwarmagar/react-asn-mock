@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react'
+import {  useState } from 'react'
 import {Routes,Route} from "react-router-dom"
 import './App.css'
 import Home from './components/Home/Home'
@@ -8,9 +8,7 @@ import Search from './components/Search/Search'
 
 function App() {
   let [breed,setBreed]=useState("")
-  useEffect(()=>{
-    setBreed(breed)
-  },[breed])
+ 
   return (
     <div className="App">
       <div>
@@ -21,7 +19,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home setBreed={setBreed}/>}/>
         <Route path="/puppy" element={<Puppy breed={breed}/>}/>      
-        <Route path="/search" element={<Search/>}/>    
+        <Route path="/search" element={<Search setBreed={setBreed}/> }/>    
       </Routes>
       </div>
      

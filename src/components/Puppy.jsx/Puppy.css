@@ -4,3 +4,17 @@
     justify-content: center;
     align-items: center;       
    }
+
+   .imgCont{
+    display: grid;
+    grid-template-columns: auto auto auto;
+   
+   }
+   .imgCont div{
+    border: 2px solid red;
+    height: 30%;
+   }
+   img{
+    overflow:hidden;
+    width: 100%;
+   }
